@@ -34,7 +34,7 @@
 
 - (void)setText {
     for (YMNCoreTextItem *item in self.items) {
-        [self addLinkableAttributs:item.tag];
+        [self addLinkableAttributs:item];
     }
     
     CTFontRef fontRef = CTFontCreateWithName((CFStringRef)@"HiraKakuProN-W3", 12.0f, nil);
@@ -46,16 +46,16 @@
     NSDictionary *linkableAttrDictionary = @{(NSString *)kCTFontAttributeName:(__bridge id)linkableFontRef,
                                              (NSString *)kCTForegroundColorAttributeName:(id)[UIColor blueColor].CGColor,
                                              (NSString *)kCTUnderlineStyleAttributeName:@(kCTUnderlineStyleSingle)};
-    for (id obj in self.linkableWords) {
-        NSRange wordRange = [obj rangeValue];
+    for (NSDictionary *linkableWord in self.linkableWords) {
+        NSRange wordRange = [linkableWord[@"range"] rangeValue];
         [self.attributedString addAttributes:linkableAttrDictionary range:wordRange];
     }
     CFRelease(linkableFontRef);
 }
 
-- (void)addLinkableAttributs:(NSString*)tag {
-    NSString *startTag = [NSString stringWithFormat:@"<%@>", tag];
-    NSString *endTag = [NSString stringWithFormat:@"</%@>", tag];
+- (void)addLinkableAttributs:(YMNCoreTextItem*)item {
+    NSString *startTag = [NSString stringWithFormat:@"<%@>", item.tag];
+    NSString *endTag = [NSString stringWithFormat:@"</%@>", item.tag];
     
     BOOL finished = NO;
     while (!finished) {
@@ -71,7 +71,8 @@
             // リンカブル文字のrangeを配列に突っ込む
             CFIndex wordLocation = startTagRange.location;
             CFIndex wordLength = endTagRange.location - startTagRange.location;
-            [self.linkableWords addObject:[NSValue valueWithRange:NSMakeRange(wordLocation, wordLength)]];
+            NSDictionary *linkableWord = @{@"item": item, @"range": [NSValue valueWithRange:NSMakeRange(wordLocation, wordLength)]};
+            [self.linkableWords addObject:linkableWord];
         } else {
             finished = YES;
         }
@@ -104,5 +105,16 @@
     CFRelease(path);
 }
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    CGPoint point = [(UITouch *)touches locationInView:self];
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+}
 
 @end
