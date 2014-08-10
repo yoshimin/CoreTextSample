@@ -1,5 +1,5 @@
 //
-//  YSViewController.h
+//  YMNViewController.h
 //  CoreTextSample
 //
 //  Created by Shingai Yoshimi on 8/3/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YSViewController : UIViewController
+@interface YMNViewController : UIViewController
 
 @end

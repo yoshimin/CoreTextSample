@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8802E12419964D0F00C626B3 /* YMNCoreTextItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8802E12319964D0F00C626B3 /* YMNCoreTextItem.m */; };
 		88C31486198E670300FE7B9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C31485198E670300FE7B9D /* Foundation.framework */; };
 		88C31488198E670300FE7B9D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C31487198E670300FE7B9D /* CoreGraphics.framework */; };
 		88C3148A198E670300FE7B9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C31489198E670300FE7B9D /* UIKit.framework */; };
 		88C31490198E670300FE7B9D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88C3148E198E670300FE7B9D /* InfoPlist.strings */; };
 		88C31492198E670300FE7B9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C31491198E670300FE7B9D /* main.m */; };
 		88C31496198E670300FE7B9D /* YSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C31495198E670300FE7B9D /* YSAppDelegate.m */; };
-		88C31499198E670300FE7B9D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C31497198E670300FE7B9D /* Main_iPhone.storyboard */; };
-		88C3149C198E670300FE7B9D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C3149A198E670300FE7B9D /* Main_iPad.storyboard */; };
-		88C3149F198E670300FE7B9D /* YSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C3149E198E670300FE7B9D /* YSViewController.m */; };
+		88C31499198E670300FE7B9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C31497198E670300FE7B9D /* Main.storyboard */; };
+		88C3149F198E670300FE7B9D /* YMNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C3149E198E670300FE7B9D /* YMNViewController.m */; };
 		88C314A1198E670300FE7B9D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88C314A0198E670300FE7B9D /* Images.xcassets */; };
 		88C314A8198E670300FE7B9D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C314A7198E670300FE7B9D /* XCTest.framework */; };
 		88C314A9198E670300FE7B9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C31485198E670300FE7B9D /* Foundation.framework */; };
 		88C314AA198E670300FE7B9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C31489198E670300FE7B9D /* UIKit.framework */; };
 		88C314B2198E670300FE7B9D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88C314B0198E670300FE7B9D /* InfoPlist.strings */; };
 		88C314B4198E670300FE7B9D /* CoreTextSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C314B3198E670300FE7B9D /* CoreTextSampleTests.m */; };
+		88C314C0198E6C7900FE7B9D /* YMNCoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C314BF198E6C7900FE7B9D /* YMNCoreTextView.m */; };
+		88C314C2198E6E4D00FE7B9D /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C314C1198E6E4D00FE7B9D /* CoreText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8802E12219964D0F00C626B3 /* YMNCoreTextItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMNCoreTextItem.h; sourceTree = "<group>"; };
+		8802E12319964D0F00C626B3 /* YMNCoreTextItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMNCoreTextItem.m; sourceTree = "<group>"; };
 		88C31482198E670300FE7B9D /* CoreTextSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreTextSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88C31485198E670300FE7B9D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		88C31487198E670300FE7B9D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,16 +49,18 @@
 		88C31493198E670300FE7B9D /* CoreTextSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreTextSample-Prefix.pch"; sourceTree = "<group>"; };
 		88C31494198E670300FE7B9D /* YSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSAppDelegate.h; sourceTree = "<group>"; };
 		88C31495198E670300FE7B9D /* YSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSAppDelegate.m; sourceTree = "<group>"; };
-		88C31498198E670300FE7B9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		88C3149B198E670300FE7B9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		88C3149D198E670300FE7B9D /* YSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YSViewController.h; sourceTree = "<group>"; };
-		88C3149E198E670300FE7B9D /* YSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSViewController.m; sourceTree = "<group>"; };
+		88C31498198E670300FE7B9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88C3149D198E670300FE7B9D /* YMNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMNViewController.h; sourceTree = "<group>"; };
+		88C3149E198E670300FE7B9D /* YMNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMNViewController.m; sourceTree = "<group>"; };
 		88C314A0198E670300FE7B9D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		88C314A6198E670300FE7B9D /* CoreTextSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreTextSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88C314A7198E670300FE7B9D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		88C314AF198E670300FE7B9D /* CoreTextSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreTextSampleTests-Info.plist"; sourceTree = "<group>"; };
 		88C314B1198E670300FE7B9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		88C314B3198E670300FE7B9D /* CoreTextSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreTextSampleTests.m; sourceTree = "<group>"; };
+		88C314BE198E6C7900FE7B9D /* YMNCoreTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMNCoreTextView.h; sourceTree = "<group>"; };
+		88C314BF198E6C7900FE7B9D /* YMNCoreTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMNCoreTextView.m; sourceTree = "<group>"; };
+		88C314C1198E6E4D00FE7B9D /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88C314C2198E6E4D00FE7B9D /* CoreText.framework in Frameworks */,
 				88C31488198E670300FE7B9D /* CoreGraphics.framework in Frameworks */,
 				88C3148A198E670300FE7B9D /* UIKit.framework in Frameworks */,
 				88C31486198E670300FE7B9D /* Foundation.framework in Frameworks */,
@@ -103,6 +110,7 @@
 		88C31484198E670300FE7B9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				88C314C1198E6E4D00FE7B9D /* CoreText.framework */,
 				88C31485198E670300FE7B9D /* Foundation.framework */,
 				88C31487198E670300FE7B9D /* CoreGraphics.framework */,
 				88C31489198E670300FE7B9D /* UIKit.framework */,
@@ -114,12 +122,12 @@
 		88C3148B198E670300FE7B9D /* CoreTextSample */ = {
 			isa = PBXGroup;
 			children = (
+				88C314BD198E673000FE7B9D /* CoreTextView */,
 				88C31494198E670300FE7B9D /* YSAppDelegate.h */,
 				88C31495198E670300FE7B9D /* YSAppDelegate.m */,
-				88C31497198E670300FE7B9D /* Main_iPhone.storyboard */,
-				88C3149A198E670300FE7B9D /* Main_iPad.storyboard */,
-				88C3149D198E670300FE7B9D /* YSViewController.h */,
-				88C3149E198E670300FE7B9D /* YSViewController.m */,
+				88C31497198E670300FE7B9D /* Main.storyboard */,
+				88C3149D198E670300FE7B9D /* YMNViewController.h */,
+				88C3149E198E670300FE7B9D /* YMNViewController.m */,
 				88C314A0198E670300FE7B9D /* Images.xcassets */,
 				88C3148C198E670300FE7B9D /* Supporting Files */,
 			);
@@ -153,6 +161,17 @@
 				88C314B0198E670300FE7B9D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88C314BD198E673000FE7B9D /* CoreTextView */ = {
+			isa = PBXGroup;
+			children = (
+				88C314BE198E6C7900FE7B9D /* YMNCoreTextView.h */,
+				88C314BF198E6C7900FE7B9D /* YMNCoreTextView.m */,
+				8802E12219964D0F00C626B3 /* YMNCoreTextItem.h */,
+				8802E12319964D0F00C626B3 /* YMNCoreTextItem.m */,
+			);
+			name = CoreTextView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +251,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88C3149C198E670300FE7B9D /* Main_iPad.storyboard in Resources */,
 				88C314A1198E670300FE7B9D /* Images.xcassets in Resources */,
-				88C31499198E670300FE7B9D /* Main_iPhone.storyboard in Resources */,
+				88C31499198E670300FE7B9D /* Main.storyboard in Resources */,
 				88C31490198E670300FE7B9D /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,8 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88C3149F198E670300FE7B9D /* YSViewController.m in Sources */,
+				88C3149F198E670300FE7B9D /* YMNViewController.m in Sources */,
+				8802E12419964D0F00C626B3 /* YMNCoreTextItem.m in Sources */,
 				88C31496198E670300FE7B9D /* YSAppDelegate.m in Sources */,
+				88C314C0198E6C7900FE7B9D /* YMNCoreTextView.m in Sources */,
 				88C31492198E670300FE7B9D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,20 +307,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		88C31497198E670300FE7B9D /* Main_iPhone.storyboard */ = {
+		88C31497198E670300FE7B9D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				88C31498198E670300FE7B9D /* Base */,
 			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		88C3149A198E670300FE7B9D /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				88C3149B198E670300FE7B9D /* Base */,
-			);
-			name = Main_iPad.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		88C314B0198E670300FE7B9D /* InfoPlist.strings */ = {
@@ -471,6 +483,7 @@
 				88C314B9198E670300FE7B9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88C314BA198E670300FE7B9D /* Build configuration list for PBXNativeTarget "CoreTextSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +492,7 @@
 				88C314BC198E670300FE7B9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
