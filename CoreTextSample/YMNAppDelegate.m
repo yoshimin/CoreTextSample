@@ -1,14 +1,14 @@
 //
-//  YSAppDelegate.m
+//  YMNAppDelegate.m
 //  CoreTextSample
 //
 //  Created by Shingai Yoshimi on 8/3/14.
 //  Copyright (c) 2014 Shingai Yoshimi. All rights reserved.
 //
 
-#import "YSAppDelegate.h"
+#import "YMNAppDelegate.h"
 
-@implementation YSAppDelegate
+@implementation YMNAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

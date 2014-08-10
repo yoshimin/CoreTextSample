@@ -12,7 +12,7 @@
 
 /// リンカブル文字に付加するタグ
 @property (nonatomic, strong) NSString *tag;
-// リンカブル文字が押された時のアクション
+/// リンカブル文字が押された時のアクション
 @property (nonatomic, copy) void (^action)();
 
 /**

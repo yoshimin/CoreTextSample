@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "YSAppDelegate.h"
+#import "YMNAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([YSAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([YMNAppDelegate class]));
     }
 }

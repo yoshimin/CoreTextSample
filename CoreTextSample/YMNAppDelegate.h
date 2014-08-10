@@ -1,5 +1,5 @@
 //
-//  YSAppDelegate.h
+//  YMNAppDelegate.h
 //  CoreTextSample
 //
 //  Created by Shingai Yoshimi on 8/3/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YSAppDelegate : UIResponder <UIApplicationDelegate>
+@interface YMNAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
