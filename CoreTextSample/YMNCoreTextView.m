@@ -43,7 +43,9 @@
     self.attributedString = [[NSMutableAttributedString alloc] initWithString:self.text attributes:attrDictionary];
     
     CTFontRef linkableFontRef = CTFontCreateWithName((CFStringRef)@"HiraKakuProN-W6", 12.0f, nil);
-    NSDictionary *linkableAttrDictionary = @{(NSString *)kCTFontAttributeName:(__bridge id)linkableFontRef};
+    NSDictionary *linkableAttrDictionary = @{(NSString *)kCTFontAttributeName:(__bridge id)linkableFontRef,
+                                             (NSString *)kCTForegroundColorAttributeName:(id)[UIColor blueColor].CGColor,
+                                             (NSString *)kCTUnderlineStyleAttributeName:@(kCTUnderlineStyleSingle)};
     for (id obj in self.linkableWords) {
         NSRange wordRange = [obj rangeValue];
         [self.attributedString addAttributes:linkableAttrDictionary range:wordRange];
